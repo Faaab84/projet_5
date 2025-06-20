@@ -3,7 +3,7 @@ def square(nombre):
         result = float(nombre)
         return result ** 2
     except (ValueError, TypeError):
-        print("Le paramètre doit être un nombre !")
+        print("Il faut écrire uniquement un nombre !")
 
 
 nombre = input("Entrez un nombre : ")
