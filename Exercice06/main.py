@@ -4,7 +4,9 @@ def calculate_average(numbers):
     return total / length
 
 
-numbers = [10, 20, 30, 40, 50]
+if __name__ == '__main__':
 
-average = calculate_average(numbers)
-print("La moyenne est :", average)
+    numbers = [10, 20, 30, 40, 50]
+
+    average = calculate_average(numbers)
+    print("La moyenne est :", average)

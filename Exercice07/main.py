@@ -6,7 +6,10 @@ def square(nombre):
         print("Il faut écrire uniquement un nombre !")
 
 
-nombre = input("Entrez un nombre : ")
-square_resultat = square(nombre)
-if square_resultat is not None:
-    print(f"Le carré est : {square_resultat}")
+if __name__ == '__main__':
+
+    nombre = input("Entrez un nombre : ")
+    square_resultat = square(nombre)
+    if square_resultat is not None:
+        print(f"Le carré est: {square_resultat}")
+

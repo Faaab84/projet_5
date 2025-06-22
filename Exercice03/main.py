@@ -12,4 +12,8 @@ for mot in words:
     tuple_mot = (mot, num_voy)
     liste_resultat.append(tuple_mot)
 
-print(liste_resultat)
+
+
+if __name__ == '__main__':
+    print(liste_resultat)
+

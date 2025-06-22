@@ -26,23 +26,13 @@ class BankAccount:
         return f"Titulaire : {self.account_holder}, Solde : {self.balance}"
 
 
+if __name__ == '__main__':
 
-"""compte = BankAccount("Jean Dupont", 1000.0)
+    compte = BankAccount("Fabien", 1000.0)
 
-# Affichage du solde initial
-print(compte.display_balance())
-
-# Dépôt de 500
-print(compte.deposit(500))
-
-# Retrait de 200
-print(compte.withdraw(200))
-
-# Tentative de retrait supérieur au solde
-print(compte.withdraw(2000))
-
-# Tentative de dépôt négatif
-print(compte.deposit(-100))
-
-# Affichage du solde final
-print(compte.display_balance())"""
+    print("affichage des infos du compte: ", compte.display_balance())
+    print("Depot de 500: ", compte.deposit(500))
+    print("Retrait de 200: ", compte.withdraw(200))
+    print("tentative de retrait superieur au solde: ", compte.withdraw(2000))
+    print("tentative de depot d'un montant negatif: ", compte.deposit(-100))
+    print("affichage des infos du compte: ", compte.display_balance())

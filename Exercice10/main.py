@@ -22,8 +22,9 @@ class Employee(Person):
 
 
 
+if __name__ == '__main__':
 
-employee = Employee("Paul", 12, 1320)
-employee.display_details()
+    employee = Employee("Paul", 12, 1320)
+    employee.display_details()
 
 
