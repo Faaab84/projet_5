@@ -42,3 +42,22 @@ class Library:
 
     def borrowed_books_list(self):
         return [book.title for book in self.borrowed_books]
+
+"""
+if __name__ == "__main__":
+    library = Library()
+
+    library.add_book(Book("Le Petit Prince", "Antoine de Saint-Exupéry", 2034))
+    print("livre dispo apres ajout du Petit Prince :", library.available_books())
+
+    library.add_book(Book("1984", "George Orwell", 345))
+    print("Livres disponibles après ajout de 1984 :", library.available_books())
+
+    library.borrow_book("Le Petit Prince")
+    print("Livres disponibles après emprunt du Petit Prince :", library.available_books())
+#   library.borrow_book("Le Petit Prince")
+    print(" la liste des livres emprunter:",library.borrowed_books_list())
+    #   library.return_book("Le Petit Prince")
+    print("Livres disponibles après retour du Petit Prince :", library.available_books())
+
+"""

@@ -24,3 +24,25 @@ class BankAccount:
 
     def display_balance(self):
         return f"Titulaire : {self.account_holder}, Solde : {self.balance}"
+
+
+
+"""compte = BankAccount("Jean Dupont", 1000.0)
+
+# Affichage du solde initial
+print(compte.display_balance())
+
+# Dépôt de 500
+print(compte.deposit(500))
+
+# Retrait de 200
+print(compte.withdraw(200))
+
+# Tentative de retrait supérieur au solde
+print(compte.withdraw(2000))
+
+# Tentative de dépôt négatif
+print(compte.deposit(-100))
+
+# Affichage du solde final
+print(compte.display_balance())"""
