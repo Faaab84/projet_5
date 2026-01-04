@@ -17,22 +17,24 @@ students = {
 }
 
 nom = input("Entrez le nom d'un étudiant : ")
+
 if nom in students:
     infos = students[nom]
-    print(f"Note de {nom}: ")
+
+    somme_notes = 0
+    nombre_notes = 0
+
+    print(f"Notes de {nom} :")
     for matiere, note in infos.items():
-        somme_notes = 0
-        nombre_notes = 0
-        print(f"{matiere} note: {note}")
+        print(f"  {matiere} : {note}")
         somme_notes += note
         nombre_notes += 1
 
-
-    moyenne = somme_notes / nombre_notes
-    print(f"Moyenne de {nom}: {moyenne}")
+    if nombre_notes > 0:
+        moyenne = somme_notes / nombre_notes
+        print(f"Moyenne de {nom} : {moyenne:.2f}")
+    else:
+        print("Aucune note enregistrée pour cet étudiant.")
 
 else:
     print(f"L'étudiant {nom} n'existe pas dans la liste.")
-
-
-
